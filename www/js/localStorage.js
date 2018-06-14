@@ -22,6 +22,7 @@ var obj3 = document.getElementById("age").value;
    localStorage.setItem("weightSaved", obj); 
    localStorage.setItem("growthSaved", obj2); 
    localStorage.setItem("ageSaved", obj3); 
+   vibration();
 } 
 
 function showLocalStorage() { 
@@ -38,9 +39,10 @@ function removeProjectFromLocalStorage() {
 	localStorage.removeItem("weightSaved");
 	localStorage.removeItem("growthSaved");
 	localStorage.removeItem("ageSaved");
+	vibration();
 }
 
 function vibration() {
-   var time = 3000;
+   var time = 2000;
    navigator.vibrate(time);
 }
