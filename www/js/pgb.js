@@ -30,7 +30,7 @@ function insRow(id) {
 	var time = x.insertCell(1);
     var kal = x.insertCell(2);
 	var obj = document.getElementById("mySelect");
-	var weight = document.getElementById("savedWeight");
+	var weight = document.getElementById("weight");
 	var t;
 	var k;
 	var w;
@@ -40,7 +40,7 @@ function insRow(id) {
 	// Get the value of the input field with id="numb"
 		t = document.getElementById("numb").value;
 		k = document.getElementById("mySelect").value;	
-		w = document.getElementById("savedWeight").value;
+		w = document.getElementById("weight").value;
 		
     exercise.innerHTML =obj.options[obj.selectedIndex].text;
 	time.innerHTML = "czas:" + t +" min";
