@@ -13,11 +13,11 @@ function setLocalStorage() {
 var obj = document.getElementById("weight").value; 
 var obj2 = document.getElementById("growth").value;
 var obj3 = document.getElementById("age").value;  
-    document.getElementById("savedWeight").value = 
+    document.getElementById("weight").value = 
     obj;
-    document.getElementById("savedGrowth").value = 
+    document.getElementById("growth").value = 
     obj2;	
-    document.getElementById("savedAge").value = 
+    document.getElementById("age").value = 
     obj3;	
    localStorage.setItem("weightSaved", obj); 
    localStorage.setItem("growthSaved", obj2); 
