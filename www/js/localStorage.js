@@ -13,15 +13,11 @@ function setLocalStorage() {
 var obj = document.getElementById("weight").value; 
 var obj2 = document.getElementById("growth").value;
 var obj3 = document.getElementById("age").value;  
-    document.getElementById("savedWeight").value = 
-    obj;
-    document.getElementById("savedGrowth").value = 
-    obj2;	
-    document.getElementById("savedAge").value = 
-    obj3;	
+
    localStorage.setItem("weightSaved", obj); 
    localStorage.setItem("growthSaved", obj2); 
    localStorage.setItem("ageSaved", obj3); 
+   vibrationSave();
 } 
 
 function showLocalStorage() { 
@@ -37,10 +33,15 @@ var obj3 = document.getElementById("age").value;
 function removeProjectFromLocalStorage() {
 	localStorage.removeItem("weightSaved");
 	localStorage.removeItem("growthSaved");
-	localStorage.removeItem("ageSaved");
+	localStorage.removeItem("ageSaved");]
+	vibrationRemove();
 }
 
-function vibration() {
-   var time = 3000;
+function vibrationSave() {
+   var time = 1000;
+   navigator.vibrate(time);
+}
+function vibrationRemove() {
+   var time = 1000;
    navigator.vibrate(time);
 }
